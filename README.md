@@ -99,9 +99,9 @@ System Controls: Manually adjust crisis levels, monitor API status, and filter f
 
 
 
+```
 Flow chart:
 
-USER FLOW CHART 
 [Header: User Location/Status Badge]
 [Emergency Button (Floating+Red)]
 |
@@ -109,18 +109,16 @@ USER FLOW CHART
 │   ├─ Live disaster zones (heatmap)
 │   └─ Resource pins (tap for details)
 |
-├── Quick Actions Bar
-│   ├─ 🚨 Alert | 📦 Needs | 🏥 Medical | 👥 Missing
+├── QUICK ACTIONS BAR
+│   └─ 🚨 Alert | 📦 Needs | 🏥 Medical | 👥 Missing
 |
-├── Scrollable Sections:
+├── SCROLLABLE SECTIONS
 │   ├─ Active Alerts (govt./community)
 │   ├─ Nearby Resources (water, food, meds)
 │   └─ Community Posts (urgent requests)
 |
 [Footer: Profile | Messages | Updates]
-
-
-RESCUER FLOW CHART
+Rescuer Flow Chart
 [Top Bar: Mission Triage (High/Medium/Low Priority)]
 |
 ├── LEFT PANEL - Live Operations
@@ -129,24 +127,21 @@ RESCUER FLOW CHART
 │   └─ Resource Inventory
 |
 ├── MAIN VIEW - Crisis Map
-    ├─ Heatmap Layers (flood/fire/etc.)
-    ├─ Victim Clusters
-    └─ Route Planner
-
-
-*****************I DON'T KNOW ABOUT THIS*************************
-ADMIN
+│   ├─ Heatmap Layers (flood/fire/etc.)
+│   ├─ Victim Clusters
+│   └─ Route Planner
+Admin Flow Chart
 [Command Center Header]
 |
 ├── ANALYTICS DASHBOARD
 │   ├─ Live User Heatmap
 │   ├─ Resource Imbalance Alerts
-│   └─ Verification Queue(BY AI I GUESS)
+│   └─ Verification Queue (AI-assisted)
 |
 ├── SYSTEM CONTROLS
-│   ├─ Crisis Level Adjustment(IF SOMETHING GOES WRONG)
+│   ├─ Crisis Level Adjustment
 │   ├─ API Status Monitor
-│   └─ Fake Report Filter 
+│   └─ Fake Report Filter
 |
 [Audit Log Streaming Feed]
-
+```
