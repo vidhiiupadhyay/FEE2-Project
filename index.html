@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGETHER AID - Emergency Response System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h1 class="logo-text">TOGETHER AID</h1>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-section">
+                    <h3 class="menu-title">Main Dashboard</h3>
+                    <ul class="menu-items">
+                        <li class="menu-item active">
+                            <i class="fas fa-home"></i>
+                            <span>Overview</span>
+                        </li>
+                        <li class="menu-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Live Map</span>
+                        </li>
+                        <li class="menu-item">
+                            <i class="fas fa-users"></i>
+                            <span>Community</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3 class="menu-title">Emergency Services</h3>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <i class="fas fa-ambulance"></i>
+                            <span>Medical</span>
+                        </li>
+                        <li class="menu-item">
+                            <i class="fas fa-fire-extinguisher"></i>
+                            <span>Fire & Rescue</span>
+                        </li>
+                        <li class="menu-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security</span>
+                        </li>
+                        <li class="menu-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Supplies</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3 class="menu-title">User Management</h3>
+                    <ul class="menu-items">
+                        <li class="menu-item">
+                            <i class="fas fa-user-cog"></i>
+                            <span>Profile</span>
+                        </li>
+                        <li class="menu-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </li>
+                        <li class="menu-item">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <h4>John Doe</h4>
+                        <p>Emergency Responder</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="breadcrumb">
+                        <span>Dashboard</span>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Overview</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge">3</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-cog"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Emergency Alert Banner -->
+                <div class="emergency-banner">
+                    <div class="banner-content">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div class="banner-text">
+                            <h3>Emergency Alert Active</h3>
+                            <p>System monitoring 24/7 - All services operational</p>
+                        </div>
+                    </div>
+                    <button class="banner-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>1,247</h3>
+                            <p>Active Users</p>
+                            <span class="stat-change positive">+12%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>89</h3>
+                            <p>Active Zones</p>
+                            <span class="stat-change positive">+5%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3>23</h3>
+                            <p>Active Incidents</p>
+                            <span class="stat-change negative">-8%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Grid -->
+                <div class="content-grid">
+                    <!-- Live Map Section -->
+                    <div class="content-card map-section">
+                        <div class="card-header">
+                            <h2>Live Emergency Map</h2>
+                            <div class="card-actions">
+                                <button class="btn-secondary">
+                                    <i class="fas fa-expand"></i>
+                                    Fullscreen
+                                </button>
+                                <button class="btn-secondary">
+                                    <i class="fas fa-refresh"></i>
+                                    Refresh
+                                </button>
+                            </div>
+                        </div>
+                        <div class="map-container">
+                            <div class="map-placeholder">
+                                <i class="fas fa-map"></i>
+                                <h3>Interactive Map</h3>
+                                <p>Real-time emergency locations and response units</p>
+                                <button class="btn-primary">Load Map</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="content-card activity-section">
+                        <div class="card-header">
+                            <h2>Recent Activity</h2>
+                            <button class="btn-secondary">View All</button>
+                        </div>
+                        <div class="activity-list">
+                            
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="content-card actions-section">
+                        <div class="card-header">
+                            <h2>Quick Actions</h2>
+                        </div>
+                        <div class="actions-grid">
+                            <button class="action-card emergency">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Emergency Call</span>
+                            </button>
+                            <button class="action-card incident">
+                                <i class="fas fa-plus"></i>
+                                <span>New Incident</span>
+                            </button>
+                            <button class="action-card add">
+                                <i class="fas fa-user-plus"></i>
+                                <span>Add Responder</span>
+                            </button>
+                            <button class="action-card report">
+                                <i class="fas fa-file-medical"></i>
+                                <span>Create Report</span>
+                            </button>
+                            <button class="action-card community">
+                                <i class="fas fa-users"></i>
+                                <span>Community</span>
+                            </button>
+                            <button class="action-card barter">
+                                <i class="fas fa-exchange-alt text-2xl"></i>
+                                <span>Barter System</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
