@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/demo.css">
-    
-    
+    <!-- for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
 <body>
     <div class="app-container">
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </nav>
-
+        <div class="overlay"></div>
         <!-- Main Content Area -->
         <main class="main-content">
             <!-- Top Header -->
@@ -205,22 +205,14 @@
                         <div class="card-header">
                             <h2>Live Emergency Map</h2>
                             <div class="card-actions">
-                                <button class="btn-secondary" id="fullscreen-map-btn">
+                                <button class="btn-secondary" id="fullscreen-map-btn" onclick="window.location.href='map.testing.html'">
                                     <i class="fas fa-expand"></i>
                                     Fullscreen
-                                </button>
-                                <button class="btn-secondary">
-                                    <i class="fas fa-refresh"></i>
-                                    Refresh
                                 </button>
                             </div>
                         </div>
                         <div class="map-container">
-                           
-                            <div class="map-placeholder">
-                                <i class="fas fa-map"></i>
-                                <h3>Interactive Emergency Map</h3>
-                                <p>Real-time emergency locations and response units</p>
+                            <div id="map">
                             </div>
                         </div>
                     </div>
@@ -228,7 +220,7 @@
                     <!-- Community Section -->
                     <div class="content-card activity-section" id="community-section">
                         <div class="card-header">
-                            <h2>Recent Activity</h2>
+                            <h2>Community</h2>
                             <button class="btn-secondary" onclick="window.location.href='community.html'">View All</button>
                         </div>
                         <div class="activity-list">
@@ -434,7 +426,7 @@
                         <div class="card-header">
                             <h2>Settings</h2>
                         </div>
-                        <p>Settings content goes here.</p>
+                        <p>Setting content goes here.</p>
                     </div>
 
                     <div class="content-card" id="help-section" style="display: none;">
@@ -447,8 +439,9 @@
             </div>
         </main>
     </div>
-    
- <script src="js/index.js"></script>
- 
+    <!-- for map view on demo -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+ <script src="js/demo.js"></script>
+ <script src="js/map.js"></script>
 </body>
 </html>
